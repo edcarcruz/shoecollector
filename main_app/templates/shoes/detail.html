@@ -1,10 +1,8 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Shoe List</h1>
+<h1>Shoe Details</h1>
 
-{% for shoe in shoes %}
 <div class="card">
-  <a href="/shoes/{{ shoe.id }}">
   <div class="card-content">
     <span class="card-title">{{ shoe.name }}</span>
     <p>Name: {{ shoe.name }}</p>
@@ -13,6 +11,6 @@
     <p>Material: {{ shoe.material }}</p>
     <img class="shoe-img" src="{{ shoe.image }}" alt="{{ shoe.name }}" />
   </div>
-  </a>
 </div>
-{% endfor %} {% endblock %}
+
+{% endblock %}
